@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Ludo - A minimalist frontend for emulators</title>
+  <meta name="description" content="A minimalist frontend for emulators">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+  <div class="fullheight">
+    <!-- Top Nav -->
+    <div class="topnav fixed-top">
+      <div class="container">
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link" href="#">Ludo</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ludos">LudOS</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://github.com/libretro/ludo">Github↗</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://discord.gg/YXYSEQD">Discord↗</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Header -->
+    <header class="d-flex align-items-center justify-content-center">
+      <div>
+        <p><img id="logo" src="ludo.png" alt="ludo"></p>
+        <p>Ludo is a minimalist frontend for emulators</p>
+        <div class="download">
+          <a href="https://github.com/libretro/ludo/releases/download/v0.4.2/Ludo-Windows-x86_64-0.4.2.zip" class="btn btn-outline-primary">Download for Windows</a>
+          <a href="https://github.com/libretro/ludo/releases/download/v0.4.2/Ludo-OSX-x86_64-0.4.2.dmg" class="btn btn-outline-primary">Download for Mac</a>
+          <a href="https://github.com/libretro/ludo/releases/download/v0.4.2/Ludo-Linux-x86_64-0.4.2.tar.gz" class="btn btn-outline-primary">Download for Linux</a>
+          <div class="version text-primary small">Currently v0.4.2 &middot; For 64bit systems</div>
+        </div>
+      </div>
+    </header>
+  </div>
+  
+  <!-- About -->
+  <a id="about"></a>
+  <div class="about">
+    <div class="container">
+      <h1>Focus on playing</h1>
+      
+      <div class="screenshots">
+        <div class="row">
+          <div class="col-md-6"><img src="tabnes.png"></div>
+          <div class="col-md-6 d-flex align-items-center">
+            Ludo's user interface is distraction free and configuration is always optional.
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 d-flex align-items-center text-md-right">
+            Scan your games and browse your collection categorized by system with playlists showing in-game screenshots.
+          </div>
+          <div class="col-md-6"><img src="playlist.png"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-6"><img src="quickmenu.png"></div>
+          <div class="col-md-6 d-flex align-items-center">
+            A contextual menu gives you access to actions and quick save / quick load anytime.
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 d-flex align-items-center text-md-right">
+            We chose the best emulators for the job, configured with sane defaults guarantying a balance of speed and accuracy.
+          </div>
+          <div class="col-md-6"><img src="ingame.png"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- LudOS -->
+  <a id="ludos"></a>
+  <div class="ludos">
+    <div class="container">
+      <h1>Ludo as an Operating System</h1>
+      
+      <div class="screenshots">
+        <div class="row">
+          <div class="col-md-6"><img src="schema.png" class="w-100"></div>
+          <div class="col-md-6 d-flex align-items-center">
+            <div>
+              Ludo also exists in the form of an Operating System called <em>LudOS</em>.<br />
+              It behaves and looks exactly the same and can be installed directly on a TV Box to recreate a game console experience.<br><br>
+  
+              <div class="text-center">
+                <button type="button" class="btn btn-primary">Download for PC 64bit</button>
+                <button type="button" class="btn btn-primary">Download for Raspberry Pi 2 or 3</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- FAQ -->
+  <a id="faq"></a>
+  <div class="faq">
+    <div class="container">
+      <h1>Frequently Asked Questions</h1>
+
+      <h2>How is Ludo different from RetroArch?</h2>
+      <p>Ludo will stay smaller than RetroArch by only implementing the core features and by targeting less platforms.<br>
+      By not adding advanced functionnalities we aim to deliver a stable frontend for beginner users on Windows, Mac OSX and Linux.<br>
+      Some design choices are different, for example we support less cores, and choose cores for the user. The cores are packaged in the frontend so no additional step is required to launch a game.</p>
+      
+      <h2>How is Ludo similar to RetroArch?</h2>
+      <p>As RetroArch, Ludo is a libretro frontend, so the way of communicating with the emulators is the same.<br>
+      Same cores, similar UI patterns, joypad driven UI, same game thumbnails, mostly the same game database, same terminology. I think we can also say same developers, as I am an important contributor of the libretro team, and all the people who provided me with help are also member of the libretro community.<br>
+      It definitely shares the same values.</p>
+
+      <h2>Why not implementing Ludo as a menu driver in RetroArch?</h2>
+      <p>To keep a software stable on a number of different platforms, it is important to keep a small codebase with a good test coverage. It is also important to not introduce changes at a high rate.<br>
+      RetroArch is an extremely active project and has a growing codebase that makes it harder to reach stability.<br>
+      Also, RetroArch is a very powerful and sophisticated frontend, and one of the common criticism is that it exposes too many configuration options for the average retro gamer.<br>
+      Implementing Ludo as a menu driver of RetroArch would solve none of these issues.</p>
+
+      <h2>Does Ludo offer a better scanning method compared to RetroArch?</h2>
+      <p>No, the scanner logic is basically the same and Ludo supports even less ROM formats.<br>
+      CDs are scanned based on file name instead of serial number.<br>
+      Ludo's scanner faster for this reason and because it leverages goroutines.</p>
+
+      <h2>Can you add feature X to Ludo?</h2>
+      <p>The answer is likely to be no, as we're trying to keep the code small, only bugfixes are really welcome.<br>
+      We encourage you to fork Ludo and add the feature yourself. It should be fairly easy given the scope of the project.<br>
+      If you are able to author a very useful improvement with a minimum of changes we might merge your change.</p>
+
+    </div>
+  </div>
+  
+  <footer>
+    <div class="container text-center">
+      Ludo is a project of <a href="https://github.com/libretro">libretro</a>. Fork it on <a href="https://github.com/libretro/ludo">github</a>! This website is not using cookies.
+    </div>
+  </footer>
+</body>
+</html>
