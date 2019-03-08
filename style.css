@@ -60,6 +60,22 @@ header .download {
   padding: 15px;
   margin: 20px;
   border-radius: 16px;
+  position: relative;
+}
+
+header .download:after {
+  width: 0;
+  height: 0;
+  display: block;
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border: 20px solid transparent;
+  border-bottom-color: lightcyan;
+  border-top: 0;
+  margin-left: -20px;
+  margin-top: -20px;
 }
 
 header .download .btn {
