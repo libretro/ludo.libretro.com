@@ -12,8 +12,8 @@ deploy-ludo:
     - ssh-keyscan -H $WEB_DEPLOY_TARGET > /root/.ssh/known_hosts
     - chmod 644 /root/.ssh/known_hosts
     - ssh-add <(echo "$WEB_DEPLOY_KEY" | base64 -d)
+    - rm -fr ./.git*
   script:
-    - rm -fr .git/
     - rsync -a --delete $(pwd)/ ${WEB_DEPLOY_USER}@${WEB_DEPLOY_TARGET}:/var/www/html/
     - ssh ${WEB_DEPLOY_USER}@${WEB_DEPLOY_TARGET} "chown -R $WEB_DEPLOY_USER:$WEB_DEPLOY_USER /var/www/html/"
   
